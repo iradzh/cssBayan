@@ -1,3 +1,51 @@
-h1 {
-  color: grey;
+input[type="checkbox"]:checked + label {
+  color: red;
+}
+
+body {
+  background-color: #f6f6ec;
+}
+.line {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  border-top: 1px solid gray;
+  padding-top: 25px;
+}
+.memes_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.meme_pic {
+  padding-bottom: 30px;
+  display: none;
+}
+
+.card:hover .meme_pic {
+  display: block;
+}
+
+/* 
+mobile 320x568, tablet 820x1180, desktop 1920×1080;
+ */
+
+/* DESKTOP */
+@media (min-width: 1080px) and (max-width: 1920px) {
+}
+
+/* TABLET */
+@media (min-width: 820px) and (max-width: 1180px) {
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 568px) {
 }

@@ -1,25 +1,134 @@
-/* CLICKS */
-
-input[type="radio"]:checked ~ .acc_label > .acc-img {
-  display: flex;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.acc-img {
+.pic {
   display: none;
+  transition: all ease 3s;
+}
+.acc_title {
+  border-top: 0.1em rgb(165, 165, 165) solid;
+  display: flex;
+  justify-content: space-between;
 }
 
 .acc_title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 4em;
+  padding-top: 0.5em;
 }
-.material-symbols-outlined {
+p {
+  display: none;
+  transition: all ease 0.5s;
+}
+h2 {
+  transition: all ease 0.5s;
+  font-size: 1.2em;
+}
+input {
+  width: 0;
+  height: 0;
+  appearance: none;
   display: none;
 }
 
-/* HOVER IMAGES */
-.acc_item:hover .acc-img {
+.accordion_container {
+  width: 80%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-/* HOVER BUTTONS */
+body {
+  background-color: #f6f6ec;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.8em;
+  display: flex;
+  width: 80%;
+  font-weight: 600;
+  margin: 2em auto 0 auto;
+}
+
+.acc_label {
+  display: block;
+}
+img {
+  width: 70%;
+  margin: 2em 0;
+}
+p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* 
+    mobile 320x568, tablet 820x1180, desktop 1920×1080;
+     */
+
+/* PHONE */
+@media (min-width: 568px) and (max-width: 819px) {
+  .accordion_container {
+    width: 80%;
+  }
+  h1 {
+    width: 80%;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 2em;
+  }
+  img {
+    width: 65%;
+  }
+}
+/* TABLET */
+@media (min-width: 820px) and (max-width: 1180px) {
+  .accordion_container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 2.2em;
+    width: 80%;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 2em;
+  }
+  img {
+    width: 65%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1080px) and (max-width: 2000px) {
+  .accordion_container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 3.2em;
+    width: 80%;
+  }
+  h2 {
+    font-size: 2.5em;
+    width: 80%;
+  }
+  p {
+    font-size: 3em;
+  }
+  img {
+    width: 40%;
+  }
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 568px) {
+}

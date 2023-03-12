@@ -99,6 +99,7 @@ input[type="radio"]:checked + label .acc_title h2 {
     transition-delay: 0s;
     cursor: pointer;
   }
+
   .accordion_container:hover p {
     display: inline-block;
     opacity: 1;
@@ -111,6 +112,9 @@ input[type="radio"]:checked + label .acc_title h2 {
   }
   .pic {
     cursor: pointer;
+  }
+  .acc_item:hover .acc_title p {
+    transform: rotate(45grad);
   }
 }
 
